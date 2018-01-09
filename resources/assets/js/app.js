@@ -24,26 +24,6 @@ Vue.component('chat-message', require('./components/ChatMessage.vue'));
 Vue.component('chat-log', require('./components/ChatLog.vue'));
 Vue.component('user-log', require('./components/UserLog.vue'));
 Vue.component('chat-composer', require('./components/ChatComposer.vue'));
-Vue.component('dashboard', require('./components/Dashboard.vue'));
-Vue.component('notification', require('./components/Notification.vue'));
-/*Vue.component('notification-item', require('./components/NotificationItem.vue'));*/
-Vue.component('layout', require('./components/Layout.vue'));
-Vue.component('example', require('./components/Example.vue'));
-
-Vue.component(
-    'passport-clients',
-    require('./components/passport/Clients.vue')
-);
-
-Vue.component(
-    'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue')
-);
-
-Vue.component(
-    'passport-personal-access-tokens',
-    require('./components/passport/PersonalAccessTokens.vue')
-);
 
 const app = new Vue({
     el: '#app', //NOMBRE QUE DEBE TENER LA APP <div id="app">

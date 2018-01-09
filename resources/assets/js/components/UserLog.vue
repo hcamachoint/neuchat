@@ -2,11 +2,11 @@
     <div class="user-log">
             <li v-for="user in users" :user="user"  v-bind:key="user.id" @click="activateUser(user)" :id="user.id">
 
-                    <div class="col-md-2">
+                    <!--<div class="col-md-2">
                         {{ user.id }}
-                    </div>
-                    <div class="col-md-10">
-                        <p>{{ user.name }}</p>
+                    </div>-->
+                    <div class="col-md-12">
+                        <h4>{{ user.name }}</h4>
                     </div>
 
             </li>

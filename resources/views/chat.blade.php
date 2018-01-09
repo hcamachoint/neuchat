@@ -30,17 +30,6 @@
                     </li>
                     <input type="text" class="form-control" placeholder="Search">
                     <user-log :users="users" v-on:getcurrentuser="getCurrentUser"></user-log>
-                    <li class="logout">
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                            Logout <i class="fa fa-sign-out"></i>
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-                    </li>
                 </ul>
             </div>
             <!-- /#sidebar-wrapper -->
@@ -51,13 +40,9 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="chat-info">
-                                <h2><span class="label label-success">Live Chat</span></h2>
-                                <p><span class="label label-default">Choose one of you partner from left sidebar to make a conversion.</span></p>
+                                <h2>Selecciona un contacto para empezar a conversar.</h2>
                             </div>
                             <div class="activate-chat">
-                                <!--<div class="header">
-
-                                </div>-->
                                 <div id="content" class="scrollbar">
                                     <ul class="messages" v-chat-scroll>
                                         <chat-log :messages="messages"></chat-log>
